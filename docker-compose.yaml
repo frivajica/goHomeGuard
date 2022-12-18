@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  development:
+    container_name: goHomeGuardEnv
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      target: development
+    volumes:
+      - /goHomeGuard
